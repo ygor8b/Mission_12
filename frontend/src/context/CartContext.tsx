@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Book } from '../types/Book';
+import type { Book } from '../types/Book';
 
 // Cart item extends book info with quantity
 export interface CartItem {

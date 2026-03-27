@@ -1,4 +1,6 @@
-export interface Book {
+export type { Book };
+
+interface Book {
   bookID: number;
   title: string;
   author: string;
