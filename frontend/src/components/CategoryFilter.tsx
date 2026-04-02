@@ -4,7 +4,11 @@ interface CategoryFilterProps {
   onSelectCategory: (category: string | null) => void;
 }
 
-function CategoryFilter({ categories, selectedCategory, onSelectCategory }: CategoryFilterProps) {
+function CategoryFilter({
+  categories,
+  selectedCategory,
+  onSelectCategory,
+}: CategoryFilterProps) {
   return (
     <div className="mb-3">
       <button

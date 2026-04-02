@@ -17,7 +17,9 @@ function CartSummary() {
           <span className="badge bg-primary ms-2">{cartCount}</span>
         </div>
         <div className="text-end">
-          <span className="text-muted">{cartCount} item{cartCount !== 1 ? 's' : ''}</span>
+          <span className="text-muted">
+            {cartCount} item{cartCount !== 1 ? 's' : ''}
+          </span>
           <br />
           <strong>${cartTotal.toFixed(2)}</strong>
         </div>

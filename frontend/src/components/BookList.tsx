@@ -102,8 +102,12 @@ function BookList() {
       {/* Controls Row */}
       <div className="row mb-3 align-items-center">
         <div className="col-auto">
-          <button className="btn btn-outline-primary" onClick={handleSortByTitle}>
-            Sort by Title {sortBy === 'title' ? (sortOrder === 'asc' ? '↑' : '↓') : ''}
+          <button
+            className="btn btn-outline-primary"
+            onClick={handleSortByTitle}
+          >
+            Sort by Title{' '}
+            {sortBy === 'title' ? (sortOrder === 'asc' ? '↑' : '↓') : ''}
           </button>
         </div>
         <div className="col-auto">
@@ -187,7 +191,8 @@ function BookList() {
       </nav>
 
       <p className="text-center text-muted">
-        Showing {totalCount === 0 ? 0 : (page - 1) * pageSize + 1}–{Math.min(page * pageSize, totalCount)} of {totalCount} books
+        Showing {totalCount === 0 ? 0 : (page - 1) * pageSize + 1}–
+        {Math.min(page * pageSize, totalCount)} of {totalCount} books
       </p>
 
       {/* Bootstrap Toast Notification */}

@@ -43,7 +43,9 @@ function CartPage() {
             </tbody>
             <tfoot>
               <tr>
-                <td colSpan={3} className="text-end fw-bold">Total:</td>
+                <td colSpan={3} className="text-end fw-bold">
+                  Total:
+                </td>
                 <td className="fw-bold">${cartTotal.toFixed(2)}</td>
                 <td></td>
               </tr>

@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services
 builder.Services.AddControllers();
 builder.Services.AddDbContext<BookstoreContext>(options =>
-    options.UseSqlite("Data Source=Bookstore.sqlite"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("BookstoreConnection")));
 
 // CORS for React dev server
 builder.Services.AddCors(options =>
